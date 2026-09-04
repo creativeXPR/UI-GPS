@@ -2,9 +2,13 @@
 
 # dependencies
 node_modules/
+.pnp
+.pnp.js
+*.tgz
 
 # Expo
 .expo/
+.expo-shared/
 dist/
 web-build/
 expo-env.d.ts
@@ -21,16 +25,35 @@ expo-env.d.ts
 # Metro
 .metro-health-check*
 
-# debug
+# debug / logs
 npm-debug.*
 yarn-debug.*
 yarn-error.*
+*.log
+logs/
+
+# testing
+coverage/
 
 # macOS
 .DS_Store
 *.pem
 
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+
+# Editors (keep shared .vscode config, ignore personal editor state)
+.idea/
+*.swp
+*.swo
+*~
+
 # local env files
+.env
+.env.*
+!.env.example
 .env*.local
 
 # typescript
